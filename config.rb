@@ -1,3 +1,5 @@
+# 2018-06-15
+
 # kubeadm init token
 $token = "56225f.9096af3559800a6a"
 

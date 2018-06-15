@@ -1,4 +1,5 @@
 #!/bin/bash
+# 2018-06-15
 
 MASTERIP=$1
 TOKEN=$2
