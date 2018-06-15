@@ -23,4 +23,3 @@ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/
 
 kubectl -n kube-system create sa dashboard
 kubectl create clusterrolebinding dashboard --clusterrole cluster-admin --serviceaccount=kube-system:dashboard
-kubectl -n kube-system get sa dashboard -o yaml
