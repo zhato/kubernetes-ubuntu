@@ -10,7 +10,7 @@ kubeadm init \
 --apiserver-bind-port=8080 \
 --token=$TOKEN \
 --pod-network-cidr 10.244.0.0/16 \
---token-ttl 0
+--token-ttl 0 > /shared/kubeadm.out 2> &1
 
 mkdir -p $HOME/.kube
 sudo /bin/cp -a /etc/kubernetes/admin.conf $HOME/.kube/config

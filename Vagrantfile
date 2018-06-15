@@ -45,6 +45,14 @@ Vagrant.configure("2") do |config|
       node.vm.provider "virtualbox" do |v|
         v.memory = $node_memory
       end
+
+      # Instal Kubrntes
+      node.vm.provision :shell, :inline => "sh /shared/common.sh"
+
+      node.vm.provision :shell do |s|
+        s.inline = "sh /shared/node.sh $1 $2 $3 $4"
+        s.args = ["#{masterIp}", "#{$token}", "#{nodeIp}", "#{i}"]
+      end
     end
   end
 end
