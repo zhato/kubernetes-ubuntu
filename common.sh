@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt upgrade -y
+
 # Docker
 apt remove docker docker-engine docker.io
 apt update
