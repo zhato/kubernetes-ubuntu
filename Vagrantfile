@@ -49,6 +49,7 @@ Vagrant.configure("2") do |config|
       # Instal Kubrntes
       node.vm.provision :shell, :inline => "sh /shared/common.sh"
 
+      # Join
       node.vm.provision :shell do |s|
         s.inline = "sh /shared/node.sh $1 $2 $3 $4"
         s.args = ["#{masterIp}", "#{$token}", "#{nodeIp}", "#{i}"]

@@ -4,7 +4,6 @@ http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-da
 
 kubeadm join 192.168.56.30:8080 --token 56225f.9096af3559800a6a --discovery-token-ca-cert-hash sha256:ac500c9894083c08ccf5c0f6f595317df60054c24c84a0acb882f0c1b870d4e7
 
-
 # dashboard account setting
 https://gist.github.com/kairen/e816bbc9859e3ef5a877f4991f7081a3
 
